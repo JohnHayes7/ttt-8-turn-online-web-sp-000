@@ -45,10 +45,10 @@ def turn(board)
   if valid_move?(board, index)
    move(board, index, token)
    display_board(board)
-   turn(board)
+   
    
   elsif valid_move?(board, index) == false
   puts "Invalid Move:"
-  turn(board)
+  
   end
 end
