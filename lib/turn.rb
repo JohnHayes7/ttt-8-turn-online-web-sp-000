@@ -47,7 +47,7 @@ def turn(board)
    display_board(board)
    turn(board)
    
-  elsif !valid_move?(board, index) 
+  elsif valid_move?(board, index) == false
   puts "Invalid Move:"
   turn(board)
   end
